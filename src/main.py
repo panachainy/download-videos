@@ -1,5 +1,10 @@
-from db import init_sqlite
+from db.db import DB  # init_sqlite, save_link
 from scraping import get_hls_link_from
+import fire
+
+dbClient = DB()
 
 
-# init_sqlite()
+if __name__ == '__main__':
+    fire.Fire(DB)
+
