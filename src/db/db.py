@@ -5,6 +5,8 @@ db_file = 'sql.db'
 
 
 class DB:
+    """DBClient"""
+
     def generic_sql(self, query: str):
         # Establish a connection to the database
         conn = sqlite3.connect(db_file)
